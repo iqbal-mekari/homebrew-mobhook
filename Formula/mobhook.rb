@@ -1,26 +1,26 @@
 class Mobhook < Formula
   desc "Mobile-first git hooks manager"
   homepage "https://github.com/iqbal-mekari/mobhook"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.3.0/mobhook-aarch64-apple-darwin.tar.gz"
-      sha256 "588f438357748dca20bf707ad555af762bf59d467b7b211943f840b40ea45650"
+      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.0/mobhook-aarch64-apple-darwin.tar.gz"
+      sha256 "ba7741973e07c367c8020c851fe140eba2a84b090afa6e07372e0bad32562186"
     else
-      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.3.0/mobhook-x86_64-apple-darwin.tar.gz"
-      sha256 "7453bd9aba2ca621f162e04c1e663ec6c2be55d3b8c7acc5f062f8ebebc82ecc"
+      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.0/mobhook-x86_64-apple-darwin.tar.gz"
+      sha256 "e92efc1f93be77faf581567607d4205dfe79d791732b013861959b5b62aaa2fd"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.3.0/mobhook-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "87a0aaa57be2092ea392dc9c25de18068566fa0a0784f7bf05cd0ba6c8811490"
+      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.0/mobhook-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "ba34b9c953ef060d857bfe13dd82418602d30c91579db2236d88d0258ca05fc0"
     else
-      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.3.0/mobhook-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "9d0f3d627b57692c1ccac5e7e16b6982757533ee30fb8aa8d397ddbb388ff0dd"
+      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.0/mobhook-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "b8a22637e1dcacba1f19d3f7b3089fa36b623ffcfa34e2a27e083e9adab520ad"
     end
   end
 
@@ -29,6 +29,6 @@ class Mobhook < Formula
   end
 
   test do
-    assert_match "mobhook", shell_output("#{bin}/mobhook --version")
+    assert_match version.to_s, shell_output("#{bin}/mobhook --version")
   end
 end
