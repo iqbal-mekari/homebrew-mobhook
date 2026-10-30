@@ -1,26 +1,26 @@
 class Mobhook < Formula
   desc "Mobile-first git hooks manager"
   homepage "https://github.com/iqbal-mekari/mobhook"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.0/mobhook-aarch64-apple-darwin.tar.gz"
-      sha256 "ba7741973e07c367c8020c851fe140eba2a84b090afa6e07372e0bad32562186"
+      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.1/mobhook-aarch64-apple-darwin.tar.gz"
+      sha256 "c43f327977098fd77812e72f9a0d98d5c72c55b69f7551752d9e3864e4433bcd"
     else
-      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.0/mobhook-x86_64-apple-darwin.tar.gz"
-      sha256 "e92efc1f93be77faf581567607d4205dfe79d791732b013861959b5b62aaa2fd"
+      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.1/mobhook-x86_64-apple-darwin.tar.gz"
+      sha256 "1a73c1d83a7a69f4cd60d12ede545725704a8712300b3668392e2af1fd26a2d3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.0/mobhook-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "ba34b9c953ef060d857bfe13dd82418602d30c91579db2236d88d0258ca05fc0"
+      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.1/mobhook-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "541dafa512d6d026bbb7f837f2715bbc89bc2c2765e677a712f3972508f2cade"
     else
-      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.0/mobhook-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b8a22637e1dcacba1f19d3f7b3089fa36b623ffcfa34e2a27e083e9adab520ad"
+      url "https://github.com/iqbal-mekari/mobhook/releases/download/v0.4.1/mobhook-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "73bcb0b54719f85af6ab8cede3fb111ee0f0965861df2cfd6fb5dbb1249efefc"
     end
   end
 
